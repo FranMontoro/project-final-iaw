@@ -1,3 +1,28 @@
+<?php
+session_start();
+include('config.php');
+
+$email = $_POST['email'];
+$password = md5($_POST['password']);
+//$email = "usuario@usuario.es";
+//$password = md5("usuario");
+
+$query = "SELECT * FROM usuario WHERE email='$email' AND password='$password'";
+$result = mysqli_query($mysqli, $query);
+$count = mysqli_num_rows($result);
+
+   if($count >=1){
+       $_SESSION['canAccess'] = true;
+       header('Location: dashboard.php');
+       exit;
+   } else {
+    $_SESSION['canAccess'] = false;
+   }
+
+ mysqli_close($mysqli);
+
+?>
+
 <!doctype html>
 <html lang="en">
   <head>
@@ -16,14 +41,14 @@
     <link href="../css/signin.css" rel="stylesheet">
   </head>
 
-  <body class="text-center" method="post">
-    <form class="form-signin">
+  <body class="text-center">
+    <form class="form-signin" method="post">
       <img class="mb-4" src="https://getbootstrap.com/assets/brand/bootstrap-solid.svg" alt="" width="72" height="72">
       <h1 class="h3 mb-3 font-weight-normal">Please sign in</h1>
       <label for="inputEmail" class="sr-only">Email address</label>
-      <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required autofocus>
+      <input type="email" name="email" class="form-control" placeholder="Email address" required autofocus>
       <label for="inputPassword" class="sr-only">Password</label>
-      <input type="password" id="inputPassword" class="form-control" placeholder="Password" required>
+      <input type="password" name="password" class="form-control" placeholder="Password" required>
       <div class="checkbox mb-3">
         <label>
           <input type="checkbox" value="remember-me"> Remember me
