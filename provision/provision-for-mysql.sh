@@ -21,7 +21,7 @@ DB_USER=tienda_user;
 DB_PASSWORD=tienda_password;
 mysql -uroot -p$DB_ROOT_PASSWD <<< "DROP DATABASE IF EXISTS $DB_NAME"
 mysql -uroot -p$DB_ROOT_PASSWD <<< "CREATE DATABASE $DB_NAME CHARACTER SET utf8;"
-mysql -uroot -p$DB_ROOT_PASSWD <<< "GRANT ALL PRIVILEGES ON $DB_NAME.* TO $DB_USER@'%' IDENTIFIED BY '$DB_PASSWORD'; FLUSH PRIVILEGES;"
+mysql -uroot -p$DB_ROOT_PASSWD <<< "GRANT ALL PRIVILEGES ON $DB_NAME.* TO '$DB_USER'@'%' IDENTIFIED BY '$DB_PASSWORD'; FLUSH PRIVILEGES;"
 
 #enlazamos los cambios de la BBDD con el archivo .sql
-mysql -uroot -p$DB_ROOT_PASSWD < sql/tienda.sql
+mysql -uroot -p$DB_ROOT_PASSWD < /vagrant/sql/tienda.sql
