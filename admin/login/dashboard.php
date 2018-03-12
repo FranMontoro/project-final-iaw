@@ -58,7 +58,8 @@ if($_SESSION['canAccess'] = false){
                 </a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">
+<!-- VINCULAMOS CON PRODUCTO.PHP -->                
+                <a class="nav-link" href="producto.php">
                   <span data-feather="shopping-cart"></span>
                   Products
                 </a>
