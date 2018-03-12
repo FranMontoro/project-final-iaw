@@ -2,7 +2,7 @@
 session_start();
 
 if($_SESSION['canAccess'] == false) {
-    header('Location: index.php');
+    header('Location: login.php');
     exit;
 }
 echo  "estas dentro";
