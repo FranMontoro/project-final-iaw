@@ -1,5 +1,7 @@
 <?php
+  include("../config.php");
 
+ 
 ?>
 <!doctype html>
 <html lang="en">
@@ -9,13 +11,13 @@
     <meta name="description" content="">
     <meta name="author" content="FranciscoMoreno">
 
-    <title>Pricing example for Bootstrap</title>
+    <title>Index</title>
 
     <!-- Bootstrap core CSS -->
-    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <link href="../../css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom styles for this template -->
-    <link href="../css/pricing.css" rel="stylesheet">
+    <link href="../../css/pricing.css" rel="stylesheet">
   </head>
 
   <body>

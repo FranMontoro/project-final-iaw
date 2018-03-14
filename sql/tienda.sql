@@ -38,14 +38,14 @@ INSERT INTO fabricante VALUES(8,'Huawei');
 INSERT INTO fabricante VALUES(9,'Xiaomi');
 
 /* codigo, nombre, precio, codigo_fabricante, imagen, descripcion */
-INSERT INTO producto VALUES(1,'Disco duro SATA3 1TB', 86, 5, '../admin/images/ejemplo.png','memoria');
-INSERT INTO producto VALUES(2,'Memoria RAM DDR4 8GB', 120, 6, '../admin/images/ejemplo.png','memoria RAM');
-INSERT INTO producto VALUES(3,'Disco SSD 1 TB', 150 ,4, '../admin/images/ejemplo.png','memoria SSD' );
-INSERT INTO producto VALUES(4,'GeForce GTX 1050Ti',185,7, '../admin/images/ejemplo.png','grafica');
-INSERT INTO producto VALUES(5,'GeForce GTX 1080 Xtreme',755,6, '../admin/images/ejemplo.png','super grafica');
-INSERT INTO producto VALUES(6,'Monitor 24 LED Full HD',202,1, '../admin/images/ejemplo.png','monitor');
-INSERT INTO producto VALUES(7,'Monitor 27 LED Full HD',245,1, '../admin/images/ejemplo.png','monitor grande');
-INSERT INTO producto VALUES(8,'Portátil Yoga 520',559,2, '../admin/images/ejemplo.png','portatil');
-INSERT INTO producto VALUES(9,'Portátil Ideapd 320',444,2, '../admin/images/ejemplo.png','otro portatil');
-INSERT INTO producto VALUES(10,'Impresora HP Deskjet 3720',59,3, '../admin/images/ejemplo.png','impresora');
-INSERT INTO producto VALUES(11,'Impresora HP Laserjet Pro M26nw',180,3, '../admin/images/ejemplo.png','me quede sin tinta en la otra impresora');
+INSERT INTO producto VALUES(1,'Disco duro SATA3 1TB', 86, 5, 'images/ejemplo.png','memoria');
+INSERT INTO producto VALUES(2,'Memoria RAM DDR4 8GB', 120, 6, 'images/ejemplo.png','memoria RAM');
+INSERT INTO producto VALUES(3,'Disco SSD 1 TB', 150 ,4, 'images/ejemplo.png','memoria SSD' );
+INSERT INTO producto VALUES(4,'GeForce GTX 1050Ti',185,7, 'images/ejemplo.png','grafica');
+INSERT INTO producto VALUES(5,'GeForce GTX 1080 Xtreme',755,6, 'images/ejemplo.png','super grafica');
+INSERT INTO producto VALUES(6,'Monitor 24 LED Full HD',202,1, 'images/ejemplo.png','monitor');
+INSERT INTO producto VALUES(7,'Monitor 27 LED Full HD',245,1, 'images/ejemplo.png','monitor grande');
+INSERT INTO producto VALUES(8,'Portátil Yoga 520',559,2, 'images/ejemplo.png','portatil');
+INSERT INTO producto VALUES(9,'Portátil Ideapd 320',444,2, 'images/ejemplo.png','otro portatil');
+INSERT INTO producto VALUES(10,'Impresora HP Deskjet 3720',59,3, 'images/ejemplo.png','impresora');
+INSERT INTO producto VALUES(11,'Impresora HP Laserjet Pro M26nw',180,3, 'images/ejemplo.png','me quede sin tinta en la otra impresora');
