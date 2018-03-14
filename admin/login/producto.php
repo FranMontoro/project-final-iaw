@@ -69,13 +69,14 @@ $consul = mysqli_query($mysqli, "SELECT * FROM producto");
 
               <?php
                 $cuenta = mysqli_num_rows($consul);
+// LA VAR $COD EMPIEZA DE 0 Y SE SUMA, ESTO HACE QUE SE MUESTRE UNA LISTA SIN REPETIR PRODUCTOS
                 for($cod = 0; $cod <= $cuenta; $cod++) {
 
                   echo "<tdbody>";
                     echo "<tr>";
                     $query = mysqli_query($mysqli, "SELECT * FROM producto WHERE codigo = $cod");
-                    $fabris = "SELECT fabricante.nombre from fabricante, producto WHERE fabricante.codigo=codigo_fabricante";
-                    $i=0;
+                   
+                    
 //ESTABLECEMOS LAS CONDICIONES PARA QUE MUESTE LOS DATOS EN CONSULTA A LA BBDD
                     while ($res = mysqli_fetch_array($query)){
                         echo "<td>".$res['codigo']."</td>";
@@ -83,7 +84,7 @@ $consul = mysqli_query($mysqli, "SELECT * FROM producto");
                         echo "<td>".$res['precio']."</td>";
                         echo "<td><img src=\"../../".$res['imagen']."\" width=\"150\" height=\"100\"/></td>";
                         echo "<td>".$res['descripcion']."</td>";
-                        $i++; 
+                        
                     }
                     echo "</tr>";
                   echo "</tdbody>";
