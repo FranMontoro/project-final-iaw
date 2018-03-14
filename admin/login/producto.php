@@ -63,6 +63,7 @@ $consul = mysqli_query($mysqli, "SELECT * FROM producto");
                   <th>Nombre</th>
                   <th>Precio</th>
                   <th>Imagen</th>
+                  <th>Descripcion</th>
                 </tr>
               </thead>
 
@@ -75,6 +76,7 @@ $consul = mysqli_query($mysqli, "SELECT * FROM producto");
                     $query = mysqli_query($mysqli, "SELECT * FROM producto WHERE codigo = $cod");
                     $fabris = "SELECT fabricante.nombre from fabricante, producto WHERE fabricante.codigo=codigo_fabricante";
                     $i=0;
+//ESTABLECEMOS LAS CONDICIONES PARA QUE MUESTE LOS DATOS EN CONSULTA A LA BBDD
                     while ($res = mysqli_fetch_array($query)){
                         echo "<td>".$res['codigo']."</td>";
                         echo "<td>".$res['nombre']."</td>";
