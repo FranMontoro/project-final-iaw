@@ -67,7 +67,7 @@
               echo "<br />";
               echo "<li>".$res['descripcion']."</li>";
             echo "</ul>";
-            echo "<button type=\"button\" class=\"btn btn-lg btn-block btn-outline-primary\">Detalles</button>";
+            echo "<button type=\"button\" class=\"btn btn-lg btn-block btn-outline-primary\" onclick=\"location.href='detail.php?codigo=".$res['codigo']."'\">Detalles</button>";
           echo "</div>";
         }    
           
@@ -102,7 +102,7 @@
             </ul>
           </div>
           <div class="col-6 col-md">
-            <h5>About</h5>
+            <h5>Sobre Nosotros</h5>
             <ul class="list-unstyled text-small">
               <li><a class="text-muted" href="#">Team</a></li>
               <li><a class="text-muted" href="#">Locations</a></li>

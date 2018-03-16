@@ -29,7 +29,7 @@ $count = mysqli_num_rows($query);
     <meta name="author" content="Francisco Moreno">
     
 
-    <title>Signin Template for Bootstrap</title>
+    <title>Login</title>
 
     <!-- Bootstrap core CSS, es un css comprimido -->
     <link href="../../css/bootstrap.min.css" rel="stylesheet">

@@ -6,7 +6,7 @@ if($_SESSION['canAccess'] = false){
     header('Location: login.php');
     exit;
 } else {
-    echo  "estas dentro";
+    echo  "error";
 }
 ?>
 <!doctype html>
@@ -29,7 +29,7 @@ if($_SESSION['canAccess'] = false){
 
   <body>
     <nav class="navbar navbar-dark sticky-top bg-dark flex-md-nowrap p-0">
-      <a class="navbar-brand col-sm-3 col-md-2 mr-0" href="#">Project Francisco</a>
+      <a class="navbar-brand col-sm-3 col-md-2 mr-0" href="index.php">Project Francisco</a>
       <input class="form-control form-control-dark w-100" type="text" placeholder="Search" aria-label="Search">
       <ul class="navbar-nav px-3">
         <li class="nav-item text-nowrap">
@@ -50,36 +50,12 @@ if($_SESSION['canAccess'] = false){
                   <span data-feather="home"></span>
                   Inicio <span class="sr-only">(current)</span>
                 </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">
-                  <span data-feather="file"></span>
-                  Orders
-                </a>
-              </li>
+             
               <li class="nav-item">
 <!-- VINCULAMOS CON PRODUCTO.PHP -->                
                 <a class="nav-link" href="producto.php">
                   <span data-feather="shopping-cart"></span>
                   Products
-                </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">
-                  <span data-feather="users"></span>
-                  Customers
-                </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">
-                  <span data-feather="bar-chart-2"></span>
-                  Reports
-                </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">
-                  <span data-feather="layers"></span>
-                  Integrations
                 </a>
               </li>
             </ul>
