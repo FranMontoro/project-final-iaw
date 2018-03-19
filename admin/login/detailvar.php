@@ -11,7 +11,7 @@ include ('config.php');
         $cod = $res['codigo'];
         $nom = $res['nombre'];
         $desc = $res['descripcion'];
-        $foto = "<img src='../../images".$res['imagen']."' alt=\"\">";
+        $foto = "<img src=\"../../".$res['imagen']."\" width=\"560\" height=\"425\"/>";
         $precio = $res['precio'];
     }
 

@@ -1,16 +1,12 @@
 <?php
-
-
+//Enlazamos con el archivo    
     include ('detailvar.php');
-    echo "<div>" ;          
-    echo    "<div>" ;
-    echo "<li><img src=\".$foto.\" width=\"200\" height=\"150\"/></li>";
-    echo "</div>";                          
-    echo    "</div>";
+
+// ejecutamos las variables que definimos en el archivo anterior
+    echo "<div>".$foto."</div>";
 
     echo    "<br/>"; 
 
-    echo "<div>";
     echo   "<h2>".$nom."</h2>";
     echo    "<h3>".$precio."</h3>";
     echo    "<div>".$desc."</div>";
