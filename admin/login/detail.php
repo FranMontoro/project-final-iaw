@@ -20,6 +20,8 @@
 
     <!-- Custom styles for this template -->
     <link href="../../css/pricing.css" rel="stylesheet">
+    <!-- ESTILO DE BARRA DE BUSQUEDA -->
+    <link href="../../css/sticky-footer-navbar.css" rel="stylesheet">
   </head>
 
   <body>
@@ -29,6 +31,11 @@
       <nav class="my-2 my-md-0 mr-md-3">
         <a class="p-2 text-dark" href="index.php">Inicio</a>
       </nav>
+
+      <form class="form-inline mt-2 mt-md-0">
+        <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
+      </form>
+
       <a class="btn btn-outline-primary" href="login.php">Login</a>
     </div>
 

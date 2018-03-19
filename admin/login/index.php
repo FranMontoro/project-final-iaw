@@ -22,6 +22,8 @@
 
     <!-- Custom styles for this template -->
     <link href="../../css/pricing.css" rel="stylesheet">
+    <!-- ESTILO DE BARRA DE BUSQUEDA -->
+    <link href="../../css/sticky-footer-navbar.css" rel="stylesheet">
   </head>
 
   <body>
@@ -29,11 +31,12 @@
     <div class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 bg-white border-bottom box-shadow">
       <h5 class="my-0 mr-md-auto font-weight-normal">Project Francisco</h5>
       <nav class="my-2 my-md-0 mr-md-3">
-        <!-- <a class="p-2 text-dark" href="#">Features</a>
-        <a class="p-2 text-dark" href="#">Enterprise</a>
-        <a class="p-2 text-dark" href="#">Support</a>
-        <a class="p-2 text-dark" href="#">Pricing</a> -->
       </nav> 
+
+      <form class="form-inline mt-2 mt-md-0">
+        <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
+      </form>
+
 <!-- LINKEAMOS EL BOTON CON EL login.php -->      
       <a class="btn btn-outline-primary" href="login.php">Login</a>
     </div>

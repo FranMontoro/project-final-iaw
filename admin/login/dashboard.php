@@ -45,7 +45,8 @@ if($_SESSION['canAccess'] = false){
           <div class="sidebar-sticky">
             <ul class="nav flex-column">
               <li class="nav-item">
-<!-- VINCULAMOS AL INDEX.PHP -->                
+<!-- VINCULAMOS AL INDEX.PHP -->
+</br>                
                 <a class="nav-link active" href="index.php">
                   <span data-feather="home"></span>
                   Inicio <span class="sr-only">(current)</span>
