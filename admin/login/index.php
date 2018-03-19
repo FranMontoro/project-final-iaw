@@ -3,6 +3,8 @@
 //Consultamos a la BBDD
 
   $consul = mysqli_query($mysqli, "SELECT * FROM producto");
+
+//CUENTA EL NUMERO DE CELDAS, DEFINIDAS EN LA VAR ANTERIOR  
   $cuenta = mysqli_num_rows($consul);
   
  
@@ -13,7 +15,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
-    <meta name="author" content="FranciscoMoreno">
+    <meta name="author" content="Francisco Moreno">
 
     <title>Index</title>
 
@@ -22,7 +24,7 @@
 
     <!-- Custom styles for this template -->
     <link href="../../css/pricing.css" rel="stylesheet">
-    <!-- ESTILO DE BARRA DE BUSQUEDA -->
+<!-- ESTILO DE BARRA DE BUSQUEDA -->
     <link href="../../css/sticky-footer-navbar.css" rel="stylesheet">
   </head>
 
@@ -32,13 +34,15 @@
       <h5 class="my-0 mr-md-auto font-weight-normal">Project Francisco</h5>
       <nav class="my-2 my-md-0 mr-md-3">
       </nav> 
-<!-- BARRA DE BUSQUEDA -->
-      <form method="get" class="form-inline mt-2 mt-md-0">
-        <input class="form-control mr-sm-2" type="text" placeholder="Search">
+<!-- BARRA DE BUSQUEDA, action ACTIVA LA ACCION CON INTRO -->
+      <form action="busqueda.php" method="get" class="form-inline mt-2 mt-md-0">
+        <!-- name para asignar un nombre al GET -->        
+        <input name="search" class="form-control mr-sm-2" type="text" placeholder="Search">
       </form>
 
 <!-- LINKEAMOS EL BOTON CON EL login.php -->      
       <a class="btn btn-outline-primary" href="login.php">Login</a>
+<!--      <a class="btn btn-outline-primary" href="logout.php">Logout</a> -->
     </div>
 
     <div class="pricing-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
@@ -55,6 +59,7 @@
 //EMPEZAMOS EN 1 PARA QUE NO CREE UNA TABLA VACÍA
       for($cod = 1; $cod <= $cuenta; $cod++) {
 
+//CREA UNA CONSULTA A LA BBDD        
         $query = mysqli_query($mysqli, "SELECT * FROM producto WHERE codigo = $cod");
         echo "<div class=\"card mb-4 box-shadow\">";
 //CAPA PARA NOMBRE/TITULO DEL PRODUCTO        
@@ -63,10 +68,8 @@
         while ($res = mysqli_fetch_array($query)){
 //CODIGO PARA CREAR EL NOMBRE DEL PRODUCTO          
           echo  "<h4 class=\"my-0 font-weight-normal\">".$res['nombre']."</h4>";
-          //<h1 class="card-title pricing-card-title">$29 <small class="text-muted">/ mo</small></h1>
         echo "</div>";  
           echo "<div class=\"card-body\">";
-            
             echo "<ul class=\"list-unstyled mt-3 mb-4\">";
               echo "<li><img src=\"../../".$res['imagen']."\" width=\"200\" height=\"150\"/></li>";
               echo "<br />";

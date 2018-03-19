@@ -14,7 +14,7 @@ $count = mysqli_num_rows($query);
        exit;
    } else {
     $_SESSION['canAccess'] = false;
-   }
+    }
 
  mysqli_close($mysqli);
 

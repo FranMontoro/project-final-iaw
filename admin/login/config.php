@@ -9,4 +9,6 @@ define('DB_PASSWORD','tienda_password');
 #Importante seguir este orden!
 $mysqli = mysqli_connect(DB_HOST, DB_USER, DB_PASSWORD, DB_NAME);
 
+//ACEPTA MAS CARACTERES, ENTRE ELLOS LAS TILDES
+mysqli_set_charset($mysqli, "utf8mb4");
 ?>

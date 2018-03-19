@@ -2,11 +2,9 @@
 include('config.php');
 session_start();
 
-if($_SESSION['canAccess'] = false){
+if($_SESSION['canAccess'] == false){
     header('Location: login.php');
     exit;
-} else {
-    echo  "error";
 }
 ?>
 <!doctype html>
