@@ -1,4 +1,6 @@
 <?php
+/*Este archivo nos permitirá definir variables conectadas con la BBDD,
+asi solo debemos usar variables y recortamos lineas de codigo*/
 
 include ('config.php');
 
