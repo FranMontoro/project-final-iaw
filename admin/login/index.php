@@ -32,9 +32,9 @@
       <h5 class="my-0 mr-md-auto font-weight-normal">Project Francisco</h5>
       <nav class="my-2 my-md-0 mr-md-3">
       </nav> 
-
-      <form class="form-inline mt-2 mt-md-0">
-        <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
+<!-- BARRA DE BUSQUEDA -->
+      <form method="get" class="form-inline mt-2 mt-md-0">
+        <input class="form-control mr-sm-2" type="text" placeholder="Search">
       </form>
 
 <!-- LINKEAMOS EL BOTON CON EL login.php -->      
